@@ -1,4 +1,4 @@
-document.getElementById('calculate').addEventListener('click', function(){
+document.getElementById('calculate').addEventListener('click', () => {
     const value = document.getElementById('valorIni').value;
     const taxaAno = parseFloat(document.getElementById('taxaAno').value) / 100;
     const taxaMes = ((1 + taxaAno) ** (1/12) - 1);
