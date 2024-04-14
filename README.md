@@ -1,3 +1,3 @@
 calculadora juros composto
 
-Live: [calc-jur-comp.vercel.app](https://calc-jur-comp.vercel.app)
+Live: [Calculadora de Juros Composto](https://calc-jur-comp.vercel.app)
