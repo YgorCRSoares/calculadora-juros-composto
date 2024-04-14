@@ -12,5 +12,8 @@ document.getElementById('calculate').addEventListener('click', function(){
     const inputtaxames = document.getElementById('taxaMes');
     inputtaxames.value = taxaAnoTransform.toFixed(4);
 
+    const parcelas = resultadofinal/tempo;
+    
     document.getElementById('total').innerHTML = ("R$ "  + resultadofinal.toFixed(2).replace('.',','));
+    document.getElementById('parcelas').innerHTML = ("R$ "  + parcelas.toFixed(2).replace('.',','));
 });

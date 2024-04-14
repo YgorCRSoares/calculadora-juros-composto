@@ -13,7 +13,7 @@
     <title>Juros Composto</title>
 </head>
 <body>
-    <main id="container" class="vw-100 vh-100 d-flex align-items-center justify-content-center text-white ">
+    <main id="container" class="vw-90 vh-100 d-flex align-items-center justify-content-center text-white container-fluid">
         <div id="calculator" class="d-flex flex-column rounded-4 vw-50 vh-50 p-4">
             <h2 class="position-relative">Calculadora de Juros Composto</h2>
             <div id="input_box" class="d-flex flex-column">
@@ -37,11 +37,16 @@
                 </div>
             </div>
             
-            <div id="result">
-                <h4>Resultado</h4>
-                <span id="total"> R$ 0,00</span>
+            <div class="row d-flex flex-row align-items-center">
+                <div id="result" class="col-sm">
+                    <h6>Resultado</h6>
+                    <span id="total" class="fs-4"> R$ 0,00</span>
+                </div>
+                <div id="result" class="col-sm"> 
+                    <h6>Valor estimado da parcela</h6>
+                    <span id="parcelas" class="fs-4"> R$ 0,00</span>
+                </div>
             </div>
-
             <button id="calculate" class="border-0 fw-bold p-2 fs-5 rounded-pill text-white"  >Calcular</button>
         </div>
         
@@ -60,9 +65,10 @@
     <!-- BootStrap Js End -->
     
 </body>
-<footer class="vw-100">
+<footer class="vw-90">
+    <br>
     <div class="p-2 col-12 text-center text-white-50">
-        <p>Created by <a href="https://github.com/YgorCRSoares" class="text-white" title="Acesse meu GitHub!">> Ygor <</a></p>
+        <p style="font-size: 13px; margin-top: -20px ">Created by <a href="https://github.com/YgorCRSoares" class="text-white" title="Acesse meu GitHub!">> Ygor <</a></p>
     </div>
 </footer>
 </html>

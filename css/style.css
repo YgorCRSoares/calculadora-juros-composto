@@ -30,9 +30,10 @@
 }
 
 #calculator {
+    
     background-color: #262626;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
-    gap: 25px;
+    gap: 5px;
 }
 
 #calculator h2 {
@@ -64,16 +65,16 @@
     outline: none;
 }
 
-#result {
-    text-align: center;
-}
-
-#resultAno{
+#result, #resultadoAno {
     text-align: center;
 }
 
 #total {
-    font-size: 40px;
+    font-size: 30px;
+}
+
+#parcelas {
+    font-size: 30px;
 }
 
 #calculate {
