@@ -86,3 +86,35 @@ footer {
 
     background: var(--linear-gradient);
 }
+/* Responsive Mobile Part */
+
+@media screen and (max-width: 896px) {
+    body {
+      height: 160vh;
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+    }
+
+    #container {
+         flex: auto;
+    }
+}
+
+  @media screen and (min-width: 375px) and (max-width: 500px) {
+    body {
+      height: 105vh;
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+    }
+
+    container {
+        height: 50vh;
+         flex: auto;
+    }
+}
+
+/* Responsive Mobile Part end */
+
+
