@@ -14,8 +14,9 @@
 
 </head>
 <body>
-    <main id="container" class=" vw-90 vh-100 d-flex align-items-center justify-content-center text-white container-fluid">
-        <div id="calculator" class="d-flex flex-column rounded-4 vw-50 vh-50 p-4">
+    <main>
+    <div id="container" class="row vw-90 vh-100 d-flex align-items-center justify-content-center text-white container-fluid m-auto">
+        <div id="calculator" class="d-flex flex-column rounded-4 vw-50 vh-50 p-4 col-md-6">
             <h2 class="position-relative">Calculadora de Juros Composto</h2>
             <div id="input_box" class="d-flex flex-column">
                 <div class="input-field d-flex flex-column w-100">
@@ -50,10 +51,39 @@
             </div>
             <button id="calculate" class="border-0 fw-bold p-2 fs-5 rounded-pill text-white"  >Calcular</button>
         </div>
-        
-    </main>
+    </div>
+        <!-- SECONT SECTION -->
+        <div id="calculator2" class="d-flex flex-column p-4 col-md-6 text-center">
+            <h5 class="position-relative">juros por dias</h5>
+            <div>
+            <table class="table table-bordered table-hover table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Capital</th>
+                        <th>Montante de Juros</th>
+                        <th>Total Estimado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="capital">-</span></td>
+                        <td><span id="montanteJuros">-</span></td>
+                        <td><span id="totalEstimado">-</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <section>
+            <label class="control-label">Dados parciais e acumulados:</label>
+            <p></p>
+            <div id="printfinal" class="table-responsive">
+            </div>
+        </div>
+    </div>
 
-    <script type="text/javascript" src="js/scripts.js"></script>
+    </main>
+    
+    <script type="text/javascript" src="js/scripts.js" defer></script>
     <!-- FormulaJs Library for calculate on js!
         I use this for the CUMIPMT formula what i use on excel... 
         Its more easy to do with this lib -->

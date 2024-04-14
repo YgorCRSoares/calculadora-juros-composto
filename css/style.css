@@ -15,6 +15,7 @@
 /* remove arrow increment end */
 :root {
     --linear-gradient: linear-gradient(90deg, #38bdf8, #3428d9, #1d4795);
+    --linear-gradient2: linear-gradient(90deg, #ffffff20, #ffffff77, #ffffff83);
 }
 
 * {
@@ -26,6 +27,8 @@
 
 #container {
     background: var(--linear-gradient);
+    backdrop-filter: blur(100px);
+    border-color: #262626;
     color: #d1d5db;
 }
 
@@ -81,22 +84,92 @@
     background: var(--linear-gradient);
     cursor: pointer;
 }
+/* CONMTAINER 2 */
+
+#calculator2 {
+    
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.205);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    gap: 5px;
+}
+
+#calculator2 h2 {
+    font-size: 30px;
+}
+
+#calculator2 h2::before{
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--linear-gradient2);
+    backdrop-filter: blur(10px);
+    bottom: 5px;
+}
+
+#input_box2 {
+    gap: 25px;
+}
+
+.input-field2 input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #3428d9;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.input-field2 input:focus {
+    outline: none;
+}
+
+#result2, #resultadoAno2 {
+    text-align: center;
+}
+
+#total2 {
+    font-size: 30px;
+}
+
+#parcelas2 {
+    font-size: 30px;
+}
+
+#calculate2 {
+    background: var(--linear-gradient2);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+
+/* END CONTAINER 2 */
 
 footer {
 
     background: var(--linear-gradient);
 }
+
+#calculator2 {
+    max-height: 80vh;
+    overflow-y: auto;
+    
+}
+
 /* Responsive Mobile Part */
 
 @media screen and (min-width: 501px) and (max-width: 1266px) {
     body {
-      height: 160vh;
+      height: 100vh;
       display: flex;
       flex: auto;
       flex-direction: column;
     }
 
     #container {
+        padding-top: 10px !important;
+        height: auto !important;
          flex: auto;
     }
 }
@@ -109,8 +182,9 @@ footer {
       flex-direction: column;
     }
 
-    container {
-        height: 50vh;
+    #container {
+        padding-top: 10px !important;
+        height: auto !important;
          flex: auto;
     }
 }
